@@ -1,0 +1,21 @@
+/*Name: Andrew Morgan
+    Class: CIS 115 MW 8:30*/
+
+body{
+  background-color:darkgrey;
+}
+
+#output{
+  margin:auto;
+  text-align:center;
+}
+#map{
+  height:50em;
+  width:50em;
+  margin:auto;
+}
+
+#btn{
+  margin:auto;
+  text-align:center;
+}
