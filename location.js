@@ -13,7 +13,7 @@ var getLocation = function() {
   else {
     alert("No Geolocation support with this browser");
   }
-  document.getElementById('centerMap').onclick(centerMap)
+  document.getElementById('centerMap').onclick = centerMap();
 };
 
 
