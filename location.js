@@ -4,7 +4,7 @@
     Class: CIS 115 MW 8:30*/
 
 
-var map, marker, centerBtn;
+var map, marker, centerBtn, latAndlong;
 
 var getLocation = function() {
   if(navigator.geolocation){
@@ -25,7 +25,7 @@ function displayLocation(position) {
 }
 
 var showMap = function (coords) {
-  var latAndLong = new google.maps.LatLng(coords.latitude, coords.longitude);
+  latAndLong = new google.maps.LatLng(coords.latitude, coords.longitude);
   var mapOptions = {zoom:18, center:latAndLong, mapTypeId:google.maps.MapTypeId.SATELLITE};
   map = new google.maps.Map(document.getElementById('map'),mapOptions);
   addMarker(latAndLong);
@@ -37,7 +37,8 @@ var addMarker = function(markerLocation) {
 };
 
 var centerMap = function() {
-
+  map.setCenter(latAndLong);
 };
 
 window.onload = getLocation;
+
