@@ -13,7 +13,7 @@ var getLocation = function() {
   else {
     alert("No Geolocation support with this browser");
   }
-  document.getElementById('centerMap').onclick = centerMap();
+  //document.getElementById('centerMap').onclick = centerMap();
 };
 
 
@@ -36,9 +36,10 @@ var addMarker = function(markerLocation) {
   marker = new google.maps.Marker(markerOptions);
 };
 
+/*
 var centerMap = function() {
   map.setCenter(latAndLong);
 };
-
+*/
 window.onload = getLocation;
 
