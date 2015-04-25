@@ -4,7 +4,7 @@
     Class: CIS 115 MW 8:30*/
 
 
-var map, marker, centerBtn, latAndlong;
+var map, marker, centerBtn, latAndLong;
 
 var getLocation = function() {
   if(navigator.geolocation){
