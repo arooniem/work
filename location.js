@@ -30,7 +30,7 @@ var showMap = function (coords) {
   map = new google.maps.Map(document.getElementById('map'),mapOptions);
   addMarker(latAndLong);
   google.maps.event.addListener(map, 'click', function(event){
-    alert(event.latLng);
+    alert('You clickd on latitude and longitude of: ' + event.latLng);
   });
 };
 
