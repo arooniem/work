@@ -42,6 +42,7 @@ var addMarker = function(markerLocation) {
 
 var centerMap = function() {
   map.setCenter(latAndLong);
+  map.setZoom(18);
 };
 
 window.onload = getLocation;
